@@ -18,7 +18,8 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
         invocation.buffer.selections.removeAllObjects()
         let lines = invocation.buffer.lines
         lines.enumerated().forEach { (lineIndex, element) in
-            let line = element as! String
+            let stringElement = element as! String
+            let line = stringElement.replacingOccurrences(of: ":", with: " ")
             for range in line.misspelled {
                 let start = XCSourceTextPosition(line: lineIndex, column: range.lowerBound)
                 let end = XCSourceTextPosition(line: lineIndex, column: range.upperBound)
