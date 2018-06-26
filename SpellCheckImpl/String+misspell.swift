@@ -9,13 +9,13 @@
 import Foundation
 import AppKit
 
+let xSpellCheckDocumentTag = 100202
 extension String {
-
     var misspelled: [NSRange] {
         var ranges = [NSRange]()
         var range = NSRange()
         while true {
-            range = NSSpellChecker.shared.checkSpelling(of: self, startingAt: range.upperBound, language: "en_US", wrap: false, inSpellDocumentWithTag: 0, wordCount: nil)
+            range = NSSpellChecker.shared.checkSpelling(of: self, startingAt: range.upperBound, language: "en_US", wrap: false, inSpellDocumentWithTag: xSpellCheckDocumentTag, wordCount: nil)
             if range.length == 0 {
                 break
             }
@@ -23,5 +23,4 @@ extension String {
         }
         return ranges
     }
-
 }

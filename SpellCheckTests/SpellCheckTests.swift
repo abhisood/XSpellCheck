@@ -7,7 +7,7 @@
 //
 
 import XCTest
-//@testable import SpellCheckImpl
+@testable import SpellCheckImpl
 
 class SpellCheckTests: XCTestCase {
     
@@ -25,25 +25,6 @@ class SpellCheckTests: XCTestCase {
         let sentence = "func hello worl method() -> completioin {"
         let ranges = sentence.misspelled
         XCTAssertEqual(ranges.count, 2)
-    }
-
-}
-extension String {
-
-    var misspelled: [NSRange] {
-        var ranges = [NSRange]()
-        var range = NSRange()
-        while true {
-            range = NSSpellChecker.shared.checkSpelling(of: self, startingAt: range.upperBound)
-            if range.length == 0 {
-                break
-            }
-            if ranges.contains(range) {
-                break
-            }
-            ranges.append(range)
-        }
-        return ranges
     }
 
 }

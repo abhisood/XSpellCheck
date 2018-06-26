@@ -19,6 +19,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8FB9892420E091B90019A647 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0B2E6F92034D75700FACAB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0B2E7232034D78A00FACAB8;
+			remoteInfo = SpellCheckImpl;
+		};
 		A0B2E7122034D75700FACAB8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A0B2E6F92034D75700FACAB8 /* Project object */;
@@ -189,6 +196,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8FB9892520E091B90019A647 /* PBXTargetDependency */,
 				A0B2E7132034D75700FACAB8 /* PBXTargetDependency */,
 			);
 			name = SpellCheckTests;
@@ -225,16 +233,16 @@
 				TargetAttributes = {
 					A0B2E7002034D75700FACAB8 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					A0B2E7102034D75700FACAB8 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						TestTargetID = A0B2E7002034D75700FACAB8;
 					};
 					A0B2E7232034D78A00FACAB8 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -314,6 +322,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8FB9892520E091B90019A647 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0B2E7232034D78A00FACAB8 /* SpellCheckImpl */;
+			targetProxy = 8FB9892420E091B90019A647 /* PBXContainerItemProxy */;
+		};
 		A0B2E7132034D75700FACAB8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A0B2E7002034D75700FACAB8 /* SpellCheck */;
@@ -451,11 +464,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SpellCheck/SpellCheck.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 5C59L2E3AR;
+				DEVELOPMENT_TEAM = DWGHUZJ9EH;
 				INFOPLIST_FILE = SpellCheck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwang123.SpellCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -470,11 +484,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SpellCheck/SpellCheck.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 5C59L2E3AR;
+				DEVELOPMENT_TEAM = DWGHUZJ9EH;
 				INFOPLIST_FILE = SpellCheck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwang123.SpellCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -488,9 +503,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 5C59L2E3AR;
+				DEVELOPMENT_TEAM = DWGHUZJ9EH;
 				INFOPLIST_FILE = SpellCheckTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwang123.SpellCheckTests;
@@ -506,9 +521,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 5C59L2E3AR;
+				DEVELOPMENT_TEAM = DWGHUZJ9EH;
 				INFOPLIST_FILE = SpellCheckTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwang123.SpellCheckTests;
@@ -524,9 +540,9 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SpellCheckImpl/SpellCheckImpl.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 5C59L2E3AR;
+				DEVELOPMENT_TEAM = DWGHUZJ9EH;
 				INFOPLIST_FILE = SpellCheckImpl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwang123.SpellCheck.SpellCheckImpl;
@@ -542,9 +558,9 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SpellCheckImpl/SpellCheckImpl.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 5C59L2E3AR;
+				DEVELOPMENT_TEAM = DWGHUZJ9EH;
 				INFOPLIST_FILE = SpellCheckImpl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwang123.SpellCheck.SpellCheckImpl;

@@ -12,8 +12,9 @@ import AppKit
 
 // the words below should be highlighted.
 // wrnog wodsr: spll, helol
+// the words below should not be highlighted.
+// [hi:there]
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
-    
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
         invocation.buffer.selections.removeAllObjects()
         let lines = invocation.buffer.lines
@@ -27,8 +28,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
                 invocation.buffer.selections.add(selection)
             }
         }
+        print("Spell check done")
         completionHandler(nil)
     }
-
-
 }
